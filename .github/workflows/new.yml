@@ -19,7 +19,7 @@ on:
 env:
   REPO_URL: https://github.com/littoy/lede
   REPO_BRANCH: master
-  CONFIG_FILE: configs/lean/lean_beggar1.config
+  CONFIG_FILE: configs/lean_beggar1.config
   DIY_SH: scripts/lean.sh
   KMODS_IN_FIRMWARE: true
   UPLOAD_RELEASE: true

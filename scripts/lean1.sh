@@ -133,3 +133,4 @@ cp -r ../target/linux/generic/pending-6.1/ ./target/linux/generic/
 
 rm -rf package/lean/autosamba
 rm -rf package/lean/vsftpd-alt
+rm -rf package/feeds/luci/luci-app-vsftpd

@@ -82,7 +82,7 @@ git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 git clone https://github.com/sbwml/openwrt-alist --depth=1
 
 # Add luci-app-smartdns & smartdns
-svn export https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns
+#svn export https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns
 
 # Add apk (Apk Packages Manager)
 svn export https://github.com/openwrt/packages/trunk/utils/apk
@@ -93,14 +93,14 @@ git clone --depth=1 https://github.com/destan19/OpenAppFilter
 # Add luci-aliyundrive-webdav
 rm -rf ../../customfeeds/luci/applications/luci-app-aliyundrive-webdav 
 rm -rf ../../customfeeds/luci/applications/aliyundrive-webdav
-svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt/aliyundrive-webdav
-svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt/luci-app-aliyundrive-webdav
-popd
+#svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt/aliyundrive-webdav
+#svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt/luci-app-aliyundrive-webdav
+#popd
 
 # Add Pandownload
-pushd package/lean
-svn export https://github.com/immortalwrt/packages/trunk/net/pandownload-fake-server
-popd
+#pushd package/lean
+#svn export https://github.com/immortalwrt/packages/trunk/net/pandownload-fake-server
+#popd
 
 # Mod zzz-default-settings
 pushd package/lean/default-settings/files

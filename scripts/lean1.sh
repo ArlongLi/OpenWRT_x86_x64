@@ -135,3 +135,5 @@ rm -rf package/lean/autosamba
 rm -rf package/lean/vsftpd-alt
 rm -rf package/feeds/luci/luci-app-vsftpd
 rm -rf package/feeds/luci/luci-app-samba4
+rm -rf package/feeds/luci/luci-app-ipsec-vpnd
+rm -rf package/feeds/luci-app-wireguard

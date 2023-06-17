@@ -17,7 +17,7 @@ on:
   #   types: started
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/littoy/lede
   REPO_BRANCH: master
   CONFIG_FILE: configs/lean_beggar1.config
   DIY_SH: scripts/lean.sh
@@ -181,7 +181,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       if: steps.tag.outputs.status == 'success' && !cancelled()
       env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
       with:
           name: ${{ steps.tag.outputs.release_date }} x86-64-Linux-${{ steps.generate.outputs.kernel_version }} 固件
           tag_name: ${{ steps.tag.outputs.release_tag }}
@@ -201,7 +201,7 @@ jobs:
           keep_latest: 20
           delete_tags: true
       env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
 
     - name: Delete Artifacts
       uses: geekyeggo/delete-artifact@v2
